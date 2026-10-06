@@ -3,142 +3,125 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WarForge Digital | Tactical FPS Clan Graphics</title>
-<meta name="description" content="Tactical FPS clan graphics, raid-night visuals, operator rosters, mission briefings and premium community branding packs.">
+<title>WarForge Digital | Premium Tactical FPS Graphics</title>
+<meta name="description" content="Premium static and animated tactical FPS clan graphics, mission briefings, raid-night visuals, operator rosters and command branding packs.">
 <style>
-:root{
-  --amber:#e3b341;--amber2:#ffd36a;--black:#070807;--muted:#a9aca6;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;color:#f3f3ef;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(#0008,#0008),repeating-linear-gradient(0deg,#10120f 0 1px,#0a0b0a 1px 3px)}
-.wrap{max-width:1180px;margin:auto;padding:22px}
-header{display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid #3c423a;padding-bottom:17px}
-.brand{font-weight:900;letter-spacing:3px;color:var(--amber2)}
-.tag{font-size:12px;color:#8f938d;letter-spacing:1.5px;text-transform:uppercase}
-.hero{margin:24px 0 0;border:1px solid #3e443d;min-height:530px;position:relative;overflow:hidden;background:radial-gradient(circle at 72% 30%,#aa6c1926 0 7%,transparent 8%),linear-gradient(120deg,#11140f 0 38%,#252c23 39% 58%,#10120f 59% 100%)}
-.hero:before{content:"";position:absolute;inset:0;opacity:.24;background:linear-gradient(90deg,transparent 49%,#8b956f 50%,transparent 51%) 0 0/72px 72px,linear-gradient(0deg,transparent 49%,#8b956f 50%,transparent 51%) 0 0/72px 72px}
-.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;min-height:530px;padding:54px}
-.eyebrow{color:var(--amber);font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
-h1{font-size:clamp(44px,7vw,82px);line-height:.92;margin:12px 0 22px;text-transform:uppercase}
-.hero p{max-width:700px;color:#c4c7c1;font-size:19px;line-height:1.55}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-.btn{display:inline-block;text-decoration:none;text-transform:uppercase;font-weight:900;letter-spacing:1.3px;padding:15px 24px;border-radius:3px;background:var(--amber);color:#10110f;border:1px solid #f2c75d}
-.btn.alt{background:#151814;color:#d6d8d2;border-color:#555c52}
-.scope{justify-self:end;width:min(330px,100%);aspect-ratio:1;border:1px solid #5d6657;border-radius:50%;position:relative;background:radial-gradient(circle,#9f2f2428 0 4%,transparent 5% 20%,#101410 21% 22%,transparent 23% 42%,#20281f 43% 44%,transparent 45%),radial-gradient(circle at 50% 50%,#172019,#090b09 67%);box-shadow:inset 0 0 0 16px #090a09,inset 0 0 0 18px #4b5247}
-.scope:before,.scope:after{content:"";position:absolute;background:#d1a53e66}
-.scope:before{width:1px;top:8%;bottom:8%;left:50%}
-.scope:after{height:1px;left:8%;right:8%;top:50%}
-.scope span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:62px;font-weight:900;color:#ddbd5c;text-shadow:0 0 22px #dda92866}
-.section{padding:56px 0}
-.section h2{margin:0;text-transform:uppercase;font-size:clamp(30px,5vw,45px);letter-spacing:.5px}
-.section-copy{max-width:800px;color:#aeb2ab;line-height:1.6;margin:10px 0 28px}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.tile{min-height:225px;border:1px solid #3b4139;background:#111311;position:relative;overflow:hidden}
-.tile .grid{position:absolute;inset:0;opacity:.28;background:linear-gradient(90deg,transparent 49%,#728067 50%,transparent 51%) 0 0/46px 46px,linear-gradient(0deg,transparent 49%,#728067 50%,transparent 51%) 0 0/46px 46px}
-.tile .flare{position:absolute;width:160px;height:160px;border-radius:50%;filter:blur(28px);opacity:.25;right:-30px;top:-20px;background:#d39a2f}
-.tile:nth-child(2) .flare,.tile:nth-child(5) .flare{background:#b23c2f}
-.tile:nth-child(4) .flare{background:#496c81}
-.tile .mark{position:absolute;left:20px;top:20px;border:1px solid #b8a05a;color:#d4bc70;font-size:11px;letter-spacing:1.6px;padding:7px 9px;text-transform:uppercase}
-.tile .op{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);width:94px;height:122px;border:2px solid #858f80;border-radius:38px 38px 14px 14px;box-shadow:0 0 0 8px #0c0d0c55}
-.tile .op:before{content:"";position:absolute;width:54px;height:32px;border:2px solid #858f80;border-radius:50%;left:18px;top:-26px;background:#111311}
-.tile .op:after{content:"";position:absolute;width:110px;height:8px;background:#b49b4c;transform:rotate(-18deg);left:-8px;top:56px;opacity:.55}
-.tile .caption{position:absolute;left:0;right:0;bottom:0;padding:35px 16px 15px;background:linear-gradient(transparent,#050605 48%)}
-.tile strong{display:block;color:#f0d074;text-transform:uppercase;font-size:17px}
-.tile small{color:#999f97}
-.packages{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
-.package{background:linear-gradient(180deg,#151814,#0b0c0b);border:1px solid #3a4038;padding:26px;position:relative;display:flex;flex-direction:column}
-.package.featured{border-color:#c59d3b;box-shadow:0 0 0 1px #c59d3b33,0 20px 50px #0008}
-.badge{position:absolute;right:14px;top:14px;background:#c99f3c;color:#111;padding:5px 8px;font-size:10px;font-weight:900;letter-spacing:1px;text-transform:uppercase}
-.package h3{color:#f0cf73;text-transform:uppercase;margin:0 0 4px;font-size:25px}
-.package .sub{font-size:11px;letter-spacing:1.3px;color:#787e76;text-transform:uppercase}
-.price{font-size:42px;font-weight:900;margin:16px 0 2px}
-.once{color:#7f847d;font-size:12px}
-.package p{color:#afb3ac;line-height:1.55}
-.package ul{padding-left:18px;color:#d1d3ce;line-height:1.8;flex:1}
-.package .btn{text-align:center;width:100%}
-.note{margin-top:9px;font-size:11px;color:#777;text-align:center}
-.value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.value{border:1px solid #32372f;background:#0e100e;padding:19px;min-height:130px}
-.value h3{color:#dabb62;margin:0 0 8px;text-transform:uppercase;font-size:15px}
-.value p{margin:0;color:#939891;line-height:1.5;font-size:13px}
-.warning{border-left:3px solid var(--amber);background:#15140e;padding:14px 16px;color:#b7b6ae;font-size:12px;line-height:1.55;margin-top:20px}
-footer{border-top:1px solid #2a2e29;padding:24px 0;color:#6e736d;font-size:12px;text-align:center}
-@media(max-width:850px){.hero-inner{grid-template-columns:1fr;padding:32px;gap:30px}.scope{justify-self:start;max-width:260px}.gallery,.packages{grid-template-columns:1fr}.value-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.wrap{padding:14px}.value-grid{grid-template-columns:1fr}header{flex-direction:column;align-items:flex-start}}
+:root{--gold:#ffc338;--gold2:#ff9f0a;--red:#ff3b30;--ink:#050606;--panel:#0b0d0d;--muted:#a7aaa6}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:#030404;color:#f4f4f0;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:repeating-linear-gradient(0deg,transparent 0 3px,#fff 4px 4px);opacity:.025}
+a{color:inherit}
+.wrap{width:min(1200px,94vw);margin:auto}
+nav{position:sticky;top:0;z-index:40;background:#050606e8;backdrop-filter:blur(12px);border-bottom:1px solid #3b3524}
+.navin{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.brand{font-weight:1000;letter-spacing:3px;font-size:20px}.brand span{color:var(--gold)}
+.navlinks{display:flex;gap:22px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+.navlinks a{text-decoration:none;color:#d4d4cf}.navlinks a:hover{color:var(--gold)}
+.hero{position:relative;min-height:78vh;display:grid;align-items:center;overflow:hidden;border-bottom:1px solid #39331f}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000 4%,#000b 34%,#0005 65%,#000c 100%),url('assets/warforge-hero.jpg') center/cover no-repeat;transform:scale(1.03);animation:heroDrift 16s ease-in-out infinite alternate}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 49.5%,#ffc33818 50%,transparent 50.5%) 0 0/80px 80px,linear-gradient(0deg,transparent 49.5%,#ffc33818 50%,transparent 50.5%) 0 0/80px 80px;animation:gridMove 14s linear infinite}
+@keyframes heroDrift{from{transform:scale(1.03) translate3d(0,0,0)}to{transform:scale(1.08) translate3d(-1.2%,.6%,0)}}
+@keyframes gridMove{to{background-position:80px 80px,80px 80px}}
+.heroContent{position:relative;z-index:3;padding:90px 0;max-width:760px}
+.kicker{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:2.2px;text-transform:uppercase}
+h1{font-size:clamp(50px,8vw,96px);line-height:.9;margin:14px 0 22px;text-transform:uppercase;text-shadow:0 7px 30px #000}
+.hero p{font-size:19px;line-height:1.6;color:#d0d1cc;max-width:700px}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;text-decoration:none;text-transform:uppercase;font-weight:1000;letter-spacing:1.2px;padding:15px 22px;border:1px solid #ffcd5c;background:linear-gradient(180deg,#ffd25b,#e49a14);color:#111;box-shadow:0 0 0 1px #ffc33822,0 0 28px #ffc33822;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 32px #ffc33855}
+.btn.alt{background:#090b0b;color:#eee;border-color:#666}
+.section{padding:72px 0}
+.section h2{font-size:clamp(32px,5vw,54px);margin:8px 0 12px;text-transform:uppercase}
+.copy{color:#aeb1ac;line-height:1.65;max-width:850px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.card{position:relative;border:1px solid #4a4126;background:#0b0d0d;overflow:hidden;min-height:290px;box-shadow:0 18px 50px #0007;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#a77d1d}
+.card img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}
+.card:hover img{transform:scale(1.035)}
+.card:after{content:"";position:absolute;inset:auto 0 0;height:42%;background:linear-gradient(transparent,#030404ee)}
+.cap{position:absolute;left:16px;right:16px;bottom:14px;z-index:2}
+.cap strong{display:block;color:#ffd35e;text-transform:uppercase;font-size:18px}.cap small{color:#c0c1bc}
+.motion{position:absolute;right:12px;top:12px;z-index:3;background:#d12d22;color:white;border:1px solid #ff5b50;padding:5px 8px;font-size:10px;font-weight:900;letter-spacing:1px;text-transform:uppercase;box-shadow:0 0 18px #ff3b3044}
+.packages{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.package{position:relative;background:linear-gradient(180deg,#111313,#090a0a);border:1px solid #51462a;padding:28px;overflow:hidden}
+.package:before{content:"";position:absolute;inset:-40% -20% auto;height:220px;background:radial-gradient(circle,#ffc33825,transparent 60%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35;transform:scale(1.1)}}
+.package.featured{border-color:#ffc338;box-shadow:0 0 40px #ffc3381e}
+.badge{position:absolute;right:14px;top:14px;background:var(--gold);color:#111;padding:6px 9px;font-size:10px;font-weight:1000;letter-spacing:1px;text-transform:uppercase}
+.package h3{position:relative;margin:0;color:#ffd45f;font-size:26px;text-transform:uppercase}
+.sub{position:relative;color:#777f77;text-transform:uppercase;letter-spacing:1.3px;font-size:11px}
+.price{position:relative;font-size:48px;font-weight:1000;margin:16px 0 0}.once{color:#858b84;font-size:12px}
+.package p,.package li{color:#c1c4bf;line-height:1.6}.package ul{padding-left:18px;min-height:260px}
+.package .btn{width:100%;text-align:center}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+.feature{border:1px solid #373428;background:#0a0c0c;padding:20px}.feature b{display:block;color:#ffd15b;text-transform:uppercase;margin-bottom:8px}.feature p{margin:0;color:#999e98;line-height:1.5;font-size:13px}
+.notice{margin-top:24px;padding:14px 16px;border-left:3px solid var(--gold);background:#14120c;color:#aaa79e;font-size:12px;line-height:1.55}
+footer{border-top:1px solid #272a27;padding:28px 0;color:#70756f;text-align:center;font-size:12px}
+@media(max-width:900px){.gallery,.packages{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr 1fr}.navlinks{display:none}}
+@media(max-width:620px){.gallery,.packages,.features{grid-template-columns:1fr}.hero{min-height:74vh}.heroContent{padding:70px 0}.package ul{min-height:auto}}
 </style>
 </head>
 <body>
-<div class="wrap">
-<header><div class="brand">WARFORGE DIGITAL</div><div class="tag">Tactical FPS Clan Graphics</div></header>
-<main>
+<nav><div class="wrap navin"><div class="brand">WAR<span>FORGE</span> DIGITAL</div><div class="navlinks"><a href="#previews">Previews</a><a href="#packages">Packages</a><a href="#about">Features</a></div><a class="btn" href="#packages">Choose Pack</a></div></nav>
+
 <section class="hero">
-  <div class="hero-inner">
-    <div>
-      <div class="eyebrow">Tactical FPS â¢ Extraction â¢ Survival â¢ Squad Operations</div>
-      <h1>Build a Clan That Looks <span style="color:#f0cf73">Combat Ready</span></h1>
-      <p>Original visual packs for tactical FPS clans, extraction-shooter squads and survival communities. Built around the feel of mission briefings, raid nights, squad rosters and operational command boards.</p>
-      <div class="actions"><a class="btn" href="#packages">Choose a Pack</a><a class="btn alt" href="#previews">View Tactical Previews</a></div>
-      <div style="margin-top:14px;color:#c7a849;font-size:11px;letter-spacing:1px;text-transform:uppercase">Stripe sandbox checkouts â¢ no live charges yet</div>
-    </div>
-    <div class="scope"><span>W</span></div>
-  </div>
-</section>
-
-<section class="section" id="previews">
-  <div class="eyebrow">Visual Direction</div>
-  <h2>Tactical FPS Preview Gallery</h2>
-  <p class="section-copy">Original WarForge visual concepts aimed at modern military FPS, extraction-shooter and survival communities. The style is influenced by the genre, not copied from any specific game, logo or interface.</p>
-  <div class="gallery">
-    <div class="tile"><div class="grid"></div><div class="flare"></div><div class="mark">Recruitment</div><div class="op"></div><div class="caption"><strong>Operator Recruitment</strong><small>Squad openings, role calls and enlistment posts</small></div></div>
-    <div class="tile"><div class="grid"></div><div class="flare"></div><div class="mark">Raid Night</div><div class="op"></div><div class="caption"><strong>Raid Night</strong><small>Scheduled tactical sessions and extraction runs</small></div></div>
-    <div class="tile"><div class="grid"></div><div class="flare"></div><div class="mark">Briefing</div><div class="op"></div><div class="caption"><strong>Mission Briefing</strong><small>Objectives, assignments and command updates</small></div></div>
-    <div class="tile"><div class="grid"></div><div class="flare"></div><div class="mark">Extraction</div><div class="op"></div><div class="caption"><strong>Extraction Event</strong><small>High-stakes event and operation announcements</small></div></div>
-    <div class="tile"><div class="grid"></div><div class="flare"></div><div class="mark">Leaderboard</div><div class="op"></div><div class="caption"><strong>Kill Leaderboard</strong><small>Performance highlights and squad rankings</small></div></div>
-    <div class="tile"><div class="grid"></div><div class="flare"></div><div class="mark">Roster</div><div class="op"></div><div class="caption"><strong>Operator Roster</strong><small>Member cards, squads and leadership structure</small></div></div>
-  </div>
-</section>
-
-<section class="section" id="packages">
-  <div class="eyebrow">One-Time Digital Packs</div>
-  <h2>Choose Your WarForge Loadout</h2>
-  <p class="section-copy">Start with essential squad visuals or move into a full command-and-branding system for active FPS communities.</p>
-  <div class="packages">
-    <article class="package">
-      <h3>Operator Pack</h3><div class="sub">Entry Tactical Kit</div><div class="price">$15</div><div class="once">One-time purchase</div>
-      <p>Core graphics for a tactical FPS clan that wants a consistent, battle-ready identity.</p>
-      <ul><li>10 ready-to-post graphics</li><li>Operator recruitment</li><li>Squad roster</li><li>Mission alert</li><li>Victory / after-action post</li><li>Clan announcement graphics</li><li>Editable PowerPoint templates</li></ul>
-      <a class="btn" href="https://buy.stripe.com/test_dRm14ngAwbyo5rU6eq9oc01">Test Operator Checkout</a><div class="note">Stripe sandbox â no live charge</div>
-    </article>
-    <article class="package featured">
-      <div class="badge">Recommended</div>
-      <h3>Squad Command Pack</h3><div class="sub">Expanded Operations Kit</div><div class="price">$29</div><div class="once">One-time purchase</div>
-      <p>For active squads running raids, events, training nights, tournaments and regular community operations.</p>
-      <ul><li>Everything in Operator Pack</li><li>Raid Night graphics</li><li>Extraction Event graphics</li><li>Mission briefing layouts</li><li>Squad assignment boards</li><li>Kill leaderboard templates</li><li>Tournament / event visuals</li><li>Additional editable layouts</li></ul>
-      <a class="btn" href="https://buy.stripe.com/test_9B614nbgc5a0f2u9qC9oc02">Test Squad Command Checkout</a><div class="note">Stripe sandbox â no live charge</div>
-    </article>
-    <article class="package">
-      <h3>Task Force Elite</h3><div class="sub">Premium Clan Branding System</div><div class="price">$49</div><div class="once">One-time purchase</div>
-      <p>A deeper command-and-branding package for established tactical FPS communities.</p>
-      <ul><li>Everything in Squad Command</li><li>Operator card system</li><li>Leadership / command panels</li><li>Task-force roster boards</li><li>Weekly operation templates</li><li>Premium event graphics</li><li>Advanced clan identity layouts</li><li>Highest-value WarForge bundle</li></ul>
-      <a class="btn" href="https://buy.stripe.com/test_7sY3cvgAweKA3jM9qC9oc03">Test Task Force Elite Checkout</a><div class="note">Stripe sandbox â no live charge</div>
-    </article>
-  </div>
-  <div class="warning">Development note: the Operator Pack corresponds to the existing product. Squad Command and Task Force Elite are test-mode storefront tiers. Their advertised downloadable asset sets should be fully assembled before live sales are enabled.</div>
-</section>
-
-<section class="section">
-  <div class="eyebrow">Designed for the Genre</div>
-  <h2>Built for Tactical Communities</h2>
-  <div class="value-grid">
-    <div class="value"><h3>Mission-Ready Visuals</h3><p>Layouts designed around briefings, raids, rosters, objectives and after-action posts.</p></div>
-    <div class="value"><h3>Extraction Flavor</h3><p>Hard-edged, original visual language suited to extraction shooters and modern military FPS games.</p></div>
-    <div class="value"><h3>Clan Identity</h3><p>Keep your recruiting, squad structure and events visually connected.</p></div>
-    <div class="value"><h3>Editable Assets</h3><p>Selected templates are made to support custom names, roles, dates and operation details.</p></div>
-  </div>
-</section>
-</main>
-<footer>Â© 2026 WarForge Digital Â· Original tactical FPS gaming-community graphics. Not affiliated with or endorsed by any game publisher or franchise.</footer>
+<div class="wrap heroContent">
+<div class="kicker">Animated Tactical FPS Graphics • Premium Clan Branding</div>
+<h1>Command<br><span style="color:#ffd05a">Attention.</span></h1>
+<p>WarForge gives tactical FPS clans, extraction squads and survival communities a sharper visual identity with cinematic static graphics, animated mission assets and command-level presentation.</p>
+<div class="btnrow"><a class="btn" href="#packages">Choose Your Pack</a><a class="btn alt" href="#previews">See Live Previews</a></div>
 </div>
+</section>
+
+<section class="section wrap" id="previews">
+<div class="kicker">Real WarForge Preview Art</div>
+<h2>Static + Animated Tactical Visuals</h2>
+<p class="copy">These previews establish the new WarForge look: cinematic operators, industrial combat environments, command-board UI, amber HUD accents and controlled red alert states.</p>
+<div class="gallery">
+<div class="card"><img src="assets/operator-recruitment-animated.gif" alt="Animated operator recruitment preview"><span class="motion">Animated</span><div class="cap"><strong>Operator Recruitment</strong><small>Recruiting and enlistment campaigns</small></div></div>
+<div class="card"><img src="assets/raid-night-animated.gif" alt="Animated raid night preview"><span class="motion">Animated</span><div class="cap"><strong>Raid Night</strong><small>Scheduled deployments and squad events</small></div></div>
+<div class="card"><img src="assets/mission-briefing-animated.gif" alt="Animated mission briefing preview"><span class="motion">Animated</span><div class="cap"><strong>Mission Briefing</strong><small>Objectives, roles and command information</small></div></div>
+<div class="card"><img src="assets/extraction-event-animated.gif" alt="Animated extraction event preview"><span class="motion">Animated</span><div class="cap"><strong>Extraction Event</strong><small>High-risk tactical operation announcements</small></div></div>
+<div class="card"><img src="assets/kill-leaderboard.jpg" alt="Kill leaderboard preview"><div class="cap"><strong>Kill Leaderboard</strong><small>Performance rankings and operator stats</small></div></div>
+<div class="card"><img src="assets/operator-roster.jpg" alt="Operator roster preview"><div class="cap"><strong>Operator Roster</strong><small>Command, assault, support and recon roles</small></div></div>
+</div>
+</section>
+
+<section class="section wrap" id="packages">
+<div class="kicker">One-Time Digital Packs</div>
+<h2>Choose Your WarForge Loadout</h2>
+<p class="copy">A clean good-better-best structure: entry graphics at $15, mixed static + motion at $29, and the strongest premium animated branding package at $49.</p>
+<div class="packages">
+<article class="package">
+<h3>Operator Pack</h3><div class="sub">Entry Tactical Kit</div><div class="price">$15</div><div class="once">one-time purchase</div>
+<ul><li>10 tactical static graphics</li><li>Recruitment posts</li><li>Event & raid graphics</li><li>Leaderboards & rosters</li><li>Editable PowerPoint templates</li><li>High-quality PNG files</li></ul>
+<a class="btn" href="https://buy.stripe.com/test_dRm14ngAwbyo5rU6eq9oc01">Test Operator Checkout</a>
+</article>
+<article class="package featured">
+<div class="badge">Recommended</div><h3>Squad Command Pack</h3><div class="sub">Expanded Operations Kit</div><div class="price">$29</div><div class="once">one-time purchase</div>
+<ul><li>Everything in Operator Pack</li><li>5 additional static graphics</li><li>4 animated graphics</li><li>Mission briefings & extraction alerts</li><li>Advanced leaderboards</li><li>Editable templates</li></ul>
+<a class="btn" href="https://buy.stripe.com/test_9B614nbgc5a0f2u9qC9oc02">Test Squad Command Checkout</a>
+</article>
+<article class="package">
+<h3>Task Force Elite</h3><div class="sub">Premium Branding System</div><div class="price">$49</div><div class="once">one-time purchase</div>
+<ul><li>Everything in Squad Command</li><li>6 additional premium graphics</li><li>6 advanced animated graphics</li><li>Operator cards & command boards</li><li>Weekly operations & victory reports</li><li>Premium editable templates</li></ul>
+<a class="btn" href="https://buy.stripe.com/test_7sY3cvgAweKA3jM9qC9oc03">Test Elite Checkout</a>
+</article>
+</div>
+<div class="notice">Stripe remains in sandbox/test mode. The storefront can be visually finished now, but live payments should wait until every downloadable product file is assembled and delivery is tested end-to-end.</div>
+</section>
+
+<section class="section wrap" id="about">
+<div class="kicker">Premium Positioning</div>
+<h2>Built to Look Expensive</h2>
+<div class="features">
+<div class="feature"><b>Cinematic Visuals</b><p>High-impact military-inspired compositions created for modern tactical gaming communities.</p></div>
+<div class="feature"><b>Motion Included</b><p>Animated GIF previews plus MP4/WebM-ready design direction for premium tiers.</p></div>
+<div class="feature"><b>Command-System Look</b><p>Mission boards, status panels, role structures and tactical interface styling.</p></div>
+<div class="feature"><b>Genre-Safe Design</b><p>Original WarForge visuals inspired by the tactical FPS genre without copying a specific title's branding.</p></div>
+</div>
+</section>
+
+<footer><div class="wrap">© 2026 WarForge Digital • Original tactical FPS community graphics • Not affiliated with or endorsed by any game publisher or franchise.</div></footer>
 </body>
 </html>
